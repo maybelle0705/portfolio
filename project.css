@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* NAVIGATION */
+  nav {
+    background-color: white;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid pink;
+  }
+  
+  .logo {
+    font-size: 20px;
+    color: pink;
+    text-decoration: none;
+    margin-left: 40px;
+    font-weight: bold;
+    cursor: default;
+  }
+  
+  nav ul {
+    list-style: none;
+    font-size: 15px;
+    margin-right: 40px;
+    display: flex;
+    gap: 25px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: pink;
+    font-weight: bold;
+    padding: 10px 15px;
+    position: relative;
+  }
+  
+  nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: pink;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+  }
+  
+  nav a:hover::after {
+    transform: scaleX(1);
+  }
+  .container {
+    background-color: #ffcdd2;
+    text-align: center;
+    padding: 100px 30px ;
+    border-radius: 60px 60px 0 0;
+    max-width: 1500px;
+    width: 90%;
+    color: white;
+    margin: 60px auto;
+    margin-bottom: 0px;
+  }
+.hero-content{
+    font-size: 16px;
+    margin-left: 25px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items:left;
+    text-align: justify;
+}
+
+.hero-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 250px;
+    height: auto;
+}
+
+.border-main {
+    position: relative;
+    display: block;
+    margin: 35px 100px;
+    padding: 35px;
+    border-radius: 10px;
+    border: 2px solid pink;
+}
+    .footer {
+        background-color: #ff9ca5; /* Soft pink background */
+        color: #fffdf7; /* Creamy white text */
+        padding: 40px 20px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        font-family: 'Arial', sans-serif;
+      }
+      
+      .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: left;
+      }
+      
+      .footer h2 {
+        font-size: 36px;
+        margin: 0;
+        font-weight: bold;
+        letter-spacing: 4px;
+      }
+      
+      .footer p {
+        font-size: 12px;
+        margin-top: 5px;
+      }
